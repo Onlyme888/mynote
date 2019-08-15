@@ -54,9 +54,12 @@ UNION SELECT 1,2,group_concat(id,username,password) from users –+ 查询字段
 ### 布尔注入
 1. 判断注入点
 2. 获取数据库名称长度
-
-
+```
+and (select length (database())) = '8'
+```
 3. 获取数据库名称
+
+
 4. 获取表长度
 5. 获取表名称
 6. 获取列长度
