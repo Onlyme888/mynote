@@ -59,7 +59,6 @@ and (select length (database())) = '8'
 ```
 3. 获取数据库名称
 and (select ord(substring(database(),1,1))) = 97
-
 4. 获取表长度
 5. 获取表名称
 6. 获取列长度
