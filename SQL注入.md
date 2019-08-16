@@ -72,3 +72,4 @@ and (select ord(substring(database(),1,1))) = 97
 6. 获取列长度
 7. 获取列名称
 8. 获取数据
+### 延时注入
