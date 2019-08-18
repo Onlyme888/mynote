@@ -59,16 +59,15 @@ Length()统计字节长度
 version()查看数据库版本
 database()查看数据库名
 user()查看当前用户
+
 ```
 1. 判断注入点
 2. 获取数据库名称长度
 ```
 and (select length (database())) = '8'
 ```
-
 3. 获取数据库名称
 and (select ord(substring(database(),1,1))) = 97
-
 4.获取表总数
 ```
 select count(table_name) from information_schema.tables where table_schema = database()
