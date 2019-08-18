@@ -82,8 +82,16 @@ SELECT LENGTH (TABLE_NAME) from information_schema.tables where table_schema = D
 ```
 SELECT ORD(SUBSTR((select(TABLE_NAME) from information_schema.tables where table_schema = DATABASE() limit 3,1),2,1))
 ```
+获取字段总数
+```
+SELECT  COUNT(column_name) from information_schema.columns where table_name='users'
+```
 7. 获取字段长度
+```
+SELECT length(column_name) from information_schema.columns where table_name='users' LIMIT 0,1
+```
 7. 获取字段名称
+
 8. 获取数据
 
 
