@@ -53,6 +53,7 @@ UNION SELECT 1,2,group_concat(id,username,password) from users –+ 查询字段
 ```
 ### 布尔注入
 ```
+SUBSTR(str,1,3)字符串截取
 mid(str,1,3)字符串截取
 ORD()转换成ascii码
 Length()统计字节长度
