@@ -18,7 +18,8 @@ string:接收任何没有\/的字符串(默认)
 float：只能接收float型参数
 int:只能接收int型参数
 path：接收任何字符串 可以接收路径（也就是可以接收路径
-uuid:唯一
+uuid:唯一 只接收UUID字符串
+any
 
 
 
