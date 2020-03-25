@@ -1,4 +1,8 @@
 ### 配置文件
 
 import config
-app.
+app.config.from_object(config)
+
+
+
+
