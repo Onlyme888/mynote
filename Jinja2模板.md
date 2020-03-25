@@ -25,4 +25,4 @@ render_template('index.html',**contex)
 
 ```
 ### 过滤器
-
+过滤器是通过（|）管道符拉
