@@ -17,7 +17,7 @@ def my_list(参数名称):
 string:接收任何没有\/的字符串(默认)
 float：
 int:
-path:和
+path：接收多少路径
 
 
 
