@@ -19,3 +19,10 @@ render_template('index.html',**contex)
 
 ```
 ### 模板中使用url_for
+1.模板中使用url_for和视图函数中使用是基本一致，也是传递视图函数的名称
+```python
+<a href="{{ url_for('login') }}">登录</a>
+
+```
+### 过滤器
+
