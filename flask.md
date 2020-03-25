@@ -13,6 +13,10 @@ def my_list(参数名称):
     return 'my_list{}'.format(参数名称)
 
 ```
+传递参数类型；默认为string 接收任何没有\/的字符串
+float：
+int:
+
 
 
 
